@@ -16,7 +16,8 @@ body {
     width: 4em;
 }
 
-.image-seed-input-container textarea {
+.image-seed-input-container textarea,
+.page-seed-from-image .seed-container textarea {
     width: 100%;
     resize: none;
 
@@ -28,4 +29,26 @@ body {
     width: min(100%, 500px);
     transform-origin: top left;
     image-rendering: pixelated;
+}
+
+.pixels-container {
+    max-width: 800px;
+}
+
+.pixels-container .pixel-row {
+    position: relative;
+    display: flex;
+}
+
+.pixels-container .pixel {
+    display: inline-block;
+    box-sizing: border-box;
+
+    height: 40px;
+    flex: 1;
+}
+
+.pixels-container .pixel:hover {
+    outline: 2px solid red;
+    z-index: 1;
 }
